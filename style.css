@@ -1,0 +1,184 @@
+/* Body Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* background: #007bff; */
+  background-image:url(/assets/images/3.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  font-family: Verdana;
+  margin: 0px;
+}
+
+
+/* Header Styles  */
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #218380;
+  color: #ffffff;
+  padding: 3vh;
+} */
+
+#leaderboard-link{
+  cursor: pointer;
+}
+
+/* specify min-width for time element to give enough space for the span inside it to contain 3 digits without visibly moving the "time" text */
+
+time {
+  min-width: 85px;
+}
+
+/* Main Styles */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Styles */
+
+.button {
+  display: block;
+  color: #000;
+  background-color: rgba(255, 165, 0);
+  padding: 2vh;
+  border-radius: 8px;
+  border: none;
+}
+
+.que_text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.option_list {
+  padding: 20px 0px;
+  display: block;
+}
+
+.inline-buttons {
+  display: inline-flex;
+}
+
+/* Card Styles */
+
+.card {
+  width: 550px;
+  /* margin-top: 15vh; */
+  /* border: solid; */
+  /* border-width: 2px; */
+  padding: 30px 20px;
+  border-radius: 30px;
+  border-color: lightgray;
+  /* box-shadow: 10px 5px 5px lightgray; */
+}
+
+.card2{
+  margin-top: 25vh;
+}
+
+/* Start Card Styles */
+
+#start-screen {
+  display: inline;
+  text-align: center;
+}
+
+/* Question Card Styles */
+
+.option-button {
+  width: 100%;
+  /* text-align: left; */
+  /* margin: 5px; */
+  /* border-radius: 0; */
+
+  background: rgba(255, 165, 0, .1);
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#result-div {
+  display: none;
+}
+
+/* Score Card Styles */
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#initials {
+  width: 25%;
+  margin: 8px;
+  padding: 1vh;
+}
+
+/* Leaderboard Card Styles */
+
+#back-button {
+  margin-right: 8px;
+}
+
+.highscore-list {
+  padding-inline-start: 20px;
+}
+
+#warning{
+  background-color: transparent;
+  border: 1px  solid orange;
+  color: orange;
+}
+
+#warning:hover{
+  background-color: orange;
+  border: 1px  solid orange;
+  color: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 850px) {
+  .card {
+    max-width: 350px;
+  }
+
+  .card2{
+    margin-top: 2vh;
+  }
+}
+
+/* Media query that specifies devices that can utilize hover */
+@media (hover) {
+  /* Stylings pertaining to hover pseudo-class*/
+  a:hover {
+    color: #cbe1e0;
+  }
+
+  button:hover {
+    /* background-color: rgba(255, 165, 0); */
+    color: #fff;
+    background: orange;
+    transition: .2s ease-in-out;
+  }
+}

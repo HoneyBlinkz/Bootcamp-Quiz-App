@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>BOOT 6.0 Quiz APP</title>
+    <link rel="shortcut icon" href="./assets/images/3.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <main class=" d-flex flex-column card2">
+        <div class=" d-flex flex-column ">
+            <div class="start-card  card border-0 p-0 " style="border-radius: 0">
+                <header class="d-flex justify-content-between align-items-center p-4 shadow ">
+                    <button type="button" id="warning" class="btn btn-outline-warning"> <a id=leaderboard-link>View Highscores <i class="fas fa-trophy fa-lg"></i>
+                    </i></a> </button>
+                   
+                    
+                    
+                    <button type="button" id="warning" class="btn btn-outline-warning"><time>Time: <span class="badge bg-dark"><span id="time"></span></time></span>  </button>
+                </header>
+            </div>
+           
+            
+            <div id=start-card class="card p-0 border-0" style="border-radius: 0">
+                <div class="p-4">
+                    <h2 id=title  class="mb-3 que_text">Coding Quiz Challenge</h2>
+                    <p  style="font-size: 17px;">Try to answer to following code-related questions within the time limit. <br><br> Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    <button id=start-button class="button">Start Quiz</button>
+                </div>
+                
+            </div>
+    
+
+
+            <div hidden id=question-card class="card p-0 border-0" style="border-radius: 0">
+                <div class="p-4">
+                    <h4 id=question-text class="mb-4 que_text" ></h4>
+    
+                <div id=quiz-options class="option-list">
+                    <button id=option0 class="button option-button"></button>
+                    <button id=option1 class="button option-button"></button>
+                    <button id=option2 class="button option-button"></button>
+                    <button id=option3 class="button option-button"></button>
+                </div>
+    
+                <div id=result-div>
+                    <hr>
+                    <button type="button" class="btn btn-outline-dark w-100 text-start" id=result-text></button>
+                </div>
+                </div>
+                
+            </div>
+    
+            <div hidden id=score-card class="card border-0" style="border-radius: 0">
+                <h2  class="que_text">All done!</h2>
+                <p>Your final score is <span id=score></span>.</p>
+                <form class="inline-form" id="submission-form">
+                      <label for="initials">Enter initials: </label>
+                      <input type="text" id="initials">
+                      <button id="submit-button" class="button">Submit</button>
+                </form>
+            </div>
+    
+            <div hidden id=leaderboard-card class="card border-0" style="border-radius: 0">
+                <h2 class="que_text">Highscores</h2>
+                <ol id="highscore-list">
+                </ol>
+                <div class="inline-buttons">
+                    <button id="back-button" class="button">Go Back</button>
+                    <button id="clear-button" class="button">Clear Highscores</button>
+                </div>
+            </div>
+        </div>
+       
+
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"bootcamp-quiz-6",
+    "public": "/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
